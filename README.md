@@ -22,7 +22,7 @@ _Show your support and give this repo a_ ⭐
 ## ℹ️ Info
 
 
-This repo contains a web scraper using `Python Scrapy` that will collect and store product data from https://apotheekdedeyne.be   
+This repo contains a web scraper using `Python Scrapy` that will collect and store product data from https://apotheekdedeyne.be.
 **Apotheek Dedeyne** is a company that operates in the Pharmaceuticals industry located in Aalter, Belgium.
 
 - **Objective**: The objective for this scraping system is to collect product data for our target keywords and monitor the result every day.

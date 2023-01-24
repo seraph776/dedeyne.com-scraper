@@ -1,20 +1,18 @@
 <div id="top" align="center">
   
-# Web Scraping Template
+# Dedeyne Web Scraper
 
 
 
 
 
 ![made-with-Python](https://img.shields.io/badge/Python-blue?&logo=python&logoColor=yellow&label=Built%20with&style=flat&labelColor=black)
-[![GitHub](https://img.shields.io/github/license/seraph776/seraph776?color=green&style=flat&labelColor=black&label=License)](https://github.com/seraph776/webscrape_template/blob/main/LICENSE)
-[![Contribute](https://img.shields.io/badge/Contribute-black?&logo=github&logoColor=black&label=&flat&labelColor=yellow)](https://github.com/seraph776/webscrape_template/blob/main/CONTRIBUTING.md) [![Report Bugs](https://img.shields.io/badge/Report%20Bugz-black?&logo=github&logoColor=black&label=&flat&labelColor=red)](https://github.com/seraph776/webscrape_template/issues/new/choose)
+[![GitHub](https://img.shields.io/github/license/seraph776/seraph776?color=green&style=flat&labelColor=black&label=License)](https://github.com/seraph776/dedeyne.com-scraper/blob/main/LICENSE)
+[![Contribute](https://img.shields.io/badge/Contribute-black?&logo=github&logoColor=black&label=&flat&labelColor=yellow)](https://github.com/seraph776/dedeyne.com-scraper/blob/main/CONTRIBUTING.md) [![Report Bugs](https://img.shields.io/badge/Report%20Bugz-black?&logo=github&logoColor=black&label=&flat&labelColor=red)](https://github.com/seraph776/dedeyne.com-scraper/issues/new/choose)
 
 
     
-<img src="https://user-images.githubusercontent.com/72005563/207742567-30da1c15-9f8f-436d-8486-a57ff99ce4ff.png" width=245>  
-<img src="https://user-images.githubusercontent.com/72005563/193153931-1d4aec4f-f7ab-4b30-95fb-635ca3e7333c.png" width=200>
-
+![image](https://user-images.githubusercontent.com/72005563/212525167-3b8386a4-d4e5-441e-91a0-e411b5eb57da.png)
 
 _Show your support and give this repo a_ ⭐
 
@@ -23,20 +21,15 @@ _Show your support and give this repo a_ ⭐
 
 ## ℹ️ Info
 
-**_Web Scraping_** is the art of extracting and parsing data from websites in an automated fashion using a progrmaming script. 
-This repo contains a web scraper using `Python Scrapy` that will collect and store product data from https://example.com   
+
+This repo contains a web scraper using `Python Scrapy` that will collect and store product data from https://apotheekdedeyne.be   
+**Apotheek Dedeyne** is a company that operates in the Pharmaceuticals industry located in Aalter, Belgium.
 
 - **Objective**: The objective for this scraping system is to collect product data for our target keywords and monitor the result every day.
-- **Target Data**: The following items will be extracted and stored from each product: `item1`, `item2`, `item3` 
+- **Target Data**: The following items will be extracted and stored from each product: `name`, `price`, `manufacture` , and `CNK` code
+- **Total Records**: `28282` records, and `26039` product images.
 - **Scale**: This will be a relatively small scale web scraper.
 - **Data Storage**: The data will be store in `CSV` and `JSON` file, and possibly to a `SQLite3` database.
-
-
-## Screenshots
-
-![image](https://user-images.githubusercontent.com/72005563/181623334-d74b5712-2709-4ccb-925b-f82cab72d8e1.png)
-![image](https://user-images.githubusercontent.com/72005563/181623334-d74b5712-2709-4ccb-925b-f82cab72d8e1.png)
-
 
 
 ## Requirements
@@ -46,13 +39,6 @@ This project was built using the `Python 3.10.1` and the following modules:
 | Required                 | Version | Purpose                                        |
 |--------------------------|:-------:|------------------------------------------------|
 | `Scrapy `                |  2.7.1  | A web-crawling framework.                      | 
-| `beautifulsoup4`         |  4.9 3  | HTML/XMl processing library.                   | 
-| `requests`               |  2.7.0  | A simple, yet elegant, HTTP library.           | 
-| `request-html`           | 0.10.0  | HTTP library, and HTML/XMl processing library. | 
-| `Js2Py`                  | 0.0.74  | Translates JavaScript to Python code.          | 
-| `mysql-connector-python` | 8.0.31  | MySQL driver written in Python                 | 
-| `openpyxl`               | 3.0.10  | Reads and writes Excel 2010 files              | 
-| `sqlite3`                |    _    | Lightweight database for storing results.      | 
 | `csv`                    |    _    | Reads and writes tabular data in CSV format.   | 
 | `json`                   |    _    | Simple JSON decoder.                           | 
 
@@ -69,7 +55,7 @@ Instructions on how to create a `pipenv` virtual environment.
 
 <summary>⚙️  Click to View </summary>
 
-1. Download [zip file](https://github.com/seraph776/webscrape_template/archive/refs/heads/main.zip) 
+1. Download [zip file](https://github.com/seraph776/dedeyne.com-scraper/archive/refs/heads/main.zip) 
 2. Extract zip files
 3. Change directory into projectFolder:
 
@@ -104,37 +90,11 @@ Instructions on how to create a `pipenv` virtual environment.
 
 
 ```python
->>> scrapy crawl spidername -o output.csv
+>>> scrapy crawl dedeyne
 ```
 
 
-For more information read [documentation](https://github.com/seraph776/webscrape_template).
-
-
-
-## Project Walk Through
-
-<details>
-<summary> 📚 Click to View </summary>
-  
-#### STEP 1: Create Project folder and Install Scrapy 
-
-```commandline
->>> mkdir FakePythonJobs
->>> cd FakePythonJobs
->>> pipenv install scrapy
-```
-#### STEP 2: Create Scrapy Project 
-```commandline
->>> scrapy startproject FakePythonJobs
->>> cd FakePythonJobs
-```
-#### STEP 3: Create Scrapy Spider 
-
-```commandline
->>> scrapy genspider jobs
-```
-</details>
+For more information read [documentation](https://github.com/seraph776/dedeyne.com-scraper).
 
 
 
@@ -142,11 +102,6 @@ For more information read [documentation](https://github.com/seraph776/webscrape
 
 
 Contributions are Welcome! For instructions on how to contribute please read our [Contributing Guidelines](https://github.com/seraph776/webscrape_template/blob/main/CONTRIBUTING.md). 
-
-
-## Discussions
-
-Have any Questions? Visit [Discussions](https://github.com/seraph776/webscrape_template/discussions) which is a space for our community to have conversations, ask questions and post answers without opening issues. Please read our [Code of Conduct](https://github.com/seraph776/webscrape_template/blob/main/CODE-OF-CONDUCT.md) which defines the  standards for engaging with the community!
 
 
 ## Feedback / Questions?
@@ -177,7 +132,7 @@ All donations help fund the continued development of new content.
 
 ## License 
 
-All code in this repository is available under the [MIT License](https://github.com/seraph776/webscrape_template/blob/main/LICENSE) © [seraph★vega](https://github.com/seraph776)
+All code in this repository is available under the [MIT License](https://github.com/seraph776/dedeyne.com-scraper/blob/main/LICENSE) © [seraph★vega](https://github.com/seraph776)
 
 
 
